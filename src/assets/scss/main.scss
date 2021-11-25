@@ -1,0 +1,131 @@
+
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+body {
+  font-size: 16px;
+  color: aliceblue;
+  margin: 0;
+  min-height: 100vh;
+  background-image: $image;
+  background-size: cover;
+}
+
+#app {
+  font: {
+    size: 1em;
+    family: 'Nunito Sans', sans-serif;
+    weight: 600;
+  };
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+
+}
+
+a {
+  color: #fffa0d;
+}
+
+h1 {
+  font: {
+    size: 2.2em;
+    weight: 800;
+    style: normal;
+  };
+
+  text-align: center;
+  letter-spacing: -1px;
+  line-height: 1.2em;
+  color: $text-color;
+  margin: 0;
+  padding-top: 2vh;
+}
+
+h2 {
+  color: $text-color;
+  font-weight: 800;
+  font-size: 1.8em;
+  margin: 1.5vh 0;
+}
+
+h3 {
+  color: $text-color;
+  font-weight: 800;
+  font-size: 1.5em;
+  margin: .2vh 0;
+  letter-spacing: 1px;
+}
+
+header {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 1em;
+}
+
+.content {
+  margin-top: 6vh;
+  padding: 15px;
+}
+
+article {
+  text-align: left;
+}
+
+@media screen and (max-width: 520px){
+  #app {
+    font-size: 0.85em;
+  }
+}
+
+.image-container {
+  height: 500px;
+  max-width: 600px;
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  iframe {
+    border: none;
+    height: inherit;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1700px){
+  .image-container {
+    height: 350px;
+  }
+}
+
+.general-button {
+  width: 100px;
+  height: 45px;
+  line-height: 30px;
+  border: 2px solid $text-color;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: $text-color;
+  transition: all 0.5s ease;
+  font-size: 1.3em;
+  cursor: pointer;
+  background-color: black;
+  box-sizing: border-box;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color;
+    color: black;
+    box-shadow: 6px 5px 18px -9px rgb(252 247 247 / 74%);
+  }
+}
